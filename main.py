@@ -16,7 +16,7 @@ app = Flask(__name__)
 app.secret_key = "36o89bn79o6b78q34tv5"
 socketio = SocketIO(app, cors_allowed_origins="*")
 
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"*": {"origins": "*"}})
 
 connList = {}
 
